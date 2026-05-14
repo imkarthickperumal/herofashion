@@ -106,6 +106,31 @@ export default defineConfig({
     }
   },
 
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'syncfusion': ['@syncfusion/ej2-react-pivotview', '@syncfusion/ej2-react-gantt', '@syncfusion/ej2-react-buttons', '@syncfusion/ej2-grids'],
+          'boldreports': ['@boldreports/javascript-reporting-controls'],
+          'vendor': ['react', 'react-dom', 'react-router-dom'],
+          'icons': ['react-icons']
+        }
+      }
+    },
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        passes: 2
+      }
+    },
+    chunkSizeWarningLimit: 1000,
+    assetsInlineLimit: 4096,
+    cssCodeSplit: true,
+    sourcemap: false,
+    reportCompressed: true
+  },
+
   server: {
     host: '0.0.0.0',
     port: 3000,
