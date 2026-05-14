@@ -1,0 +1,278 @@
+
+/* Page background and font */
+.light {
+  background: #f3f4f6; /* light grey */
+  min-height: 100vh;
+  color: #111827;
+  font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Header bar */
+#analytic_head .header.header-light {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+}
+
+#analytic_head .menu .e-icons.expand {
+  width: 36px; height: 36px; border-radius: 8px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #eef2ff; color: #1e40af; border: 1px solid #e5e7eb;
+}
+
+#analytic_head .analysis {
+  font-weight: 700; font-size: 18px; color: #111827;
+}
+
+#analytic_head .right-content .information {
+  display: flex; align-items: center; gap: 10px;
+}
+#analytic_head .right-content .image {
+  background: url('https://i.pravatar.cc/36') center/cover no-repeat;
+  width: 36px; height: 36px;
+  border-radius: 50%; border: 2px solid #e5e7eb;
+}
+#analytic_head .right-content .text-content {
+  font-weight: 600; color: #111827;
+}
+
+/* Sidebar dock */
+#dockSideDash .content-area .dock ul { list-style: none; padding: 8px 6px; margin: 0; }
+#dockSideDash .content-area .dock .sidebar-item { margin: 12px 0; display: flex; align-items: center; justify-content: center; }
+#dockSideDash .sidebar-item .e-icons {
+  width: 36px; height: 36px; border-radius: 8px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #ffffff; color: #2563eb; border: 1px solid #e5e7eb; cursor: pointer;
+}
+#dockSideDash .filterHover .e-icons.filter { background: #06b6d4; color: #ffffff; }
+
+/* Dashboard area */
+.dashboardParent { padding: 10px; }
+#analytic_dashboard { background: transparent; }
+
+/* Panel header inside DashboardLayout */
+.e-dashboardlayout .e-panel .e-panel-header {
+  background: #ffffff; color: #111827; border-bottom: 1px solid #e5e7eb;
+  padding: 8px 12px; font-weight: 600;
+}
+
+/* Ensure panel content fills height */
+.e-dashboardlayout .e-panel .e-panel-container { height: 100%; }
+
+/* Cards like screenshot */
+.card.card-light {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  align-items: center; gap: 12px;
+  background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 12px; height: 100%;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+}
+.card.card-light .e-icons.session,
+.card.card-light .e-icons.profile,
+.card.card-light .e-icons.views {
+  width: 48px; height: 48px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: #2563eb; background: #e0f2fe; border: 1px solid #e5e7eb;
+}
+.card.card-light .card-content.text { font-size: 14px; color: #6b7280; }
+.card.card-light .card-content.number { font-size: 18px; font-weight: 700; color: #111827; }
+
+/* Charts and Map containers */
+#pie, #pieChart, #visitorsChart, #colChart, #maps { width: 100%; height: 100%; }
+
+.e-tooltip-wrap {
+  background: #111827 !important; color: #ffffff !important; border: 1px solid #374151 !important;
+}
+
+/* Icon placeholders (emoji if Syncfusion icons unavailable) */
+.e-icons.home::before           { content: "☰"; }
+.e-icons.filter::before         { content: "⟳"; }
+.e-icons.analyticsChart::before { content: "📈"; }
+.e-icons.settings::before       { content: "⚙"; }
+.e-icons.analytics::before      { content: "📊"; }
+.e-icons.session::before        { content: "◌"; }
+.e-icons.profile::before        { content: "👤"; }
+.e-icons.views::before          { content: "👁"; }
+.e-grid .e-icons:not(.e-icon-filter)::before {
+  font-size: 18px;
+  line-height: 1;
+}
+ 
+
+
+::highlight(search) {
+
+  background-color: yellow;
+  color: inherit;
+  }
+
+/* Grid font styling - all elements */
+.e-grid {
+  font-size: 12px;
+  font-weight: 400;
+}
+ 
+.e-grid .e-headertext {
+  color: black;
+  font-size: 12px;
+  font-weight: 400;
+}
+ 
+.e-grid .e-headercell {
+  font-size: 12px;
+  font-weight: 400;
+}
+ 
+.e-grid .e-rowcell {
+  font-size: 12px;
+  font-weight: 400;
+}
+ 
+.e-grid .e-grouppaddingcell {
+  font-size: 12px;
+  font-weight: 400;
+}
+ 
+.e-grid .e-groupcaptionrow {
+  font-size: 12px;
+  font-weight: 400;
+}
+ 
+.e-grid .e-summaryrow {
+  font-size: 12px;
+  font-weight: 400;
+}
+ 
+.e-grid .e-filterbarcell {
+  font-size: 12px;
+  font-weight: 400;
+}
+ 
+.e-grid .e-gridcontent * {
+  font-size: 12px;
+  font-weight: 400;
+}
+ 
+.e-grid .e-templatecell {
+  font-size: 12px;
+  font-weight: 400;
+}
+ 
+.e-grid .e-templatecell * {
+  font-size: 12px;
+  font-weight: 400;
+}
+ 
+.e-grid .editCss .e-headertext {
+  color: blue;
+}
+
+.e-grid td.e-focused {
+  background-color:yellow ;
+}
+
+.e-grid.e-gridhover tr.e-row:not(.e-disable-gridhover):not(.e-detailrow) td.e-focused.e-rowcell:not(.e-updatedtd), 
+.e-grid.e-gridhover:not(.e-rowdrag) .e-row:not(.e-disable-gridhover):not(.e-editedrow):not(.e-detailrow):hover .e-rowcell.e-focused:not(.e-updatedtd):not(.e-indentcell),
+.e-grid.e-gridhover:not(.e-rowdrag) .e-row:not(.e-disable-gridhover):not(.e-editedrow):not(.e-detailrow):hover .e-rowcell.e-focused:not(.e-cellselectionbackground):not(.e-active):not(.e-columnselection):not(.e-updatedtd):not(.e-indentcell)
+{
+  background-color:yellow ;
+}
+
+.e-bigger .e-wrap.e-grid-min-height .e-rowcell{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.e-grid .e-gridheader tr:first-child:not(.e-grid-pin-row) th:not(.e-freezeleftborder, .e-freezerightborder),
+.e-grid:not(.sf-grid, .e-rtl).e-default.e-bothlines .e-headercell.e-leftfreeze.e-freezeleftborder
+{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.e-bigger .e-grid .e-groupdroparea {
+  font-size: 15px !important;
+  min-height: 40px !important;
+  padding: 12px 24px !important;
+}
+
+.e-grid .e-summarycell {
+  padding: 5px !important;
+}
+
+.e-kanban .e-kanban-table.e-content-table .e-card .e-card-tag.e-card-label {
+    background: #e09c9c;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .inner-cadr {
+    width: calc(23.7% - 10px);
+    border: 1.5px solid #f0f0f0;
+    padding: 30px 15px 30px 12px;
+    margin-right: 32px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+  }
+  .inner-cadr:nth-child(1) {
+    background-color: rgba(194, 220, 240, 1);
+  }
+  .inner-cadr:nth-child(2) {
+    background-color: rgba(201, 167, 244, 1);
+  }
+  .inner-cadr:nth-child(3) {
+    background-color: rgba(244, 218, 168, 1);
+  }
+  .inner-cadr:nth-child(4) {
+    background-color: rgba(182, 214, 171, 1);
+  }
+  .inner-cadr:last-child {
+    margin-right: 0;
+  }
+  #image-container {
+    position: relative; 
+    height: 100px;
+    padding-top: 20px;
+  }
+  #image-container img {
+    position: absolute; /* Set position absolute for precise positioning */
+  }
+  
+  #image-container img:nth-child(1) {
+    left: 0; /* Position the first image at the left edge */
+    border: 1px solid black;
+    border-radius: 30px;
+  }
+  
+  #image-container img:nth-child(2) {
+    left: 37px; /* Position the second image with some overlap from the first */
+    border: 1px solid black;
+    border-radius: 30px;
+  }
+  
+  #image-container img:nth-child(3) {
+    left: 73px; /* Position the third image with some overlap from the second */
+    border: 1px solid black;
+    border-radius: 30px;
+  }
+  
+  #image-container img:nth-child(4) {
+    left: 106px; /* Position the fourth image with some overlap from the third */
+    border: 1px solid black;
+    border-radius: 30px;
+  }
+  
+  #image-container img:nth-child(5) {
+    left: 140px; /* Position the fifth image with some overlap from the fourth */
+    border: 1px solid black;
+    border-radius: 30px;
+  }

@@ -1,0 +1,38 @@
+name: Deploy React App to IIS
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+
+jobs:
+  build-and-deploy:
+    runs-on: [self-hosted, windows, x64]
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+
+    - name: Install dependencies
+      run: npm install --legacy-peer-deps
+
+    - name: Build React app
+      run: npm run build
+
+    - name: Copy web.config
+      run: copy web.config dist\web.config
+
+
+    - name: Deploy to Production IIS
+      if: github.ref == 'refs/heads/main'
+      run: xcopy dist "D:\PRODUCTION_SOFTWEARE\frontend\dist" /E /H /C /I /Y
+
+    - name: Deploy to Dev IIS
+      if: github.ref == 'refs/heads/dev'
+      run: xcopy dist "D:\DEV_SOFTWEARE\frontend\dist" /E /H /C /I /Y
+
+    - name: Restart IIS
+      run: iisreset

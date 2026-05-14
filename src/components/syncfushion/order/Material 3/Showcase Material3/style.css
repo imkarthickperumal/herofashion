@@ -1,0 +1,55 @@
+@font-face {
+font-family: 'Showcase Material3';
+src:
+url('Fonts/Showcase Material3.ttf') format('truetype'),
+url('Fonts/Showcase Material3.woff') format('woff'),
+url('Fonts/Showcase Material3.eot') format('eot'),
+url('Fonts/Showcase Material3.svg?#Showcase Material3') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+[class^="sf-icon-"], [class*=" sf-icon-"] {
+ font-family: 'Showcase Material3' !important;
+speak: none;
+font-size: 15px;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.sf-icon-desktop:before { content: "\e700"; }
+.sf-icon-mobile:before { content: "\e701"; }
+.sf-icon-tab:before { content: "\e702"; }
+.sf-icon-configuration:before { content: "\e703"; }
+.sf-icon-row-selected:before { content: "\e704"; }
+.sf-icon-cell-selected:before { content: "\e705"; }
+.sf-icon-row-clear:before { content: "\e706"; }
+.sf-icon-column-clear:before { content: "\e707"; }
+.sf-icon-clear-selection:before { content: "\e708"; }
+.sf-icon-order-details:before { content: "\e709"; }
+.sf-icon-freight:before { content: "\e70a"; }
+.sf-icon-shopping-cart:before { content: "\e70b"; }
+.sf-icon-clear-sorting:before { content: "\e70c"; }
+.sf-icon-expand-collapse:before { content: "\e70d"; }
+.sf-icon-row-height:before { content: "\e70e"; }
+.sf-icon-currency-dollar:before { content: "\e70f"; }
+.sf-icon-filter-settings:before { content: "\e710"; }
+.sf-icon-table-settings:before { content: "\e711"; }
+.sf-icon-header-settings:before { content: "\e712"; }
+.sf-icon-edit-settings:before { content: "\e713"; }
+.sf-icon-group:before { content: "\e714"; }
+.sf-icon-clear-cell:before { content: "\e715"; }
+.sf-icon-sorting:before { content: "\e716"; }
+.sf-icon-description:before { content: "\e717"; }
+.sf-icon-estimated-cost:before { content: "\e718"; }
+.sf-icon-actual-cost:before { content: "\e719"; }
+.sf-icon-progress:before { content: "\e71a"; }
+.sf-icon-arrow-upwards:before { content: "\e71b"; }
+.sf-icon-arrow-downwards:before { content: "\e71c"; }
+.sf-icon-male:before { content: "\e71d"; }
+.sf-icon-female:before { content: "\e71e"; }

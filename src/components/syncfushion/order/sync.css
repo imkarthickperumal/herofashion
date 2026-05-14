@@ -1,0 +1,1424 @@
+/* Add a line to group the properties inside the dialog box */
+hr.separator-line {
+  border: none;
+  height: 1px;
+  background: #C4C7C5;
+  margin: 12px 0px;
+}
+
+.image-container {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .material3 .profile-image {
+   background-color: rgba(79, 70, 229);
+ }
+
+ .profile-image {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 28px;
+   height: 28px;
+   border-radius: 50%;
+   background-color: #e3165b;
+ }
+
+.name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.email {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Mapimage .e-image {
+  height: 13px;
+  width: 14px;
+}
+
+/* Move the settings icon to display at the end of the column header. */
+.iconMarginAlign {
+  width: 35px;
+}
+
+.parent-Grid-Container {
+  height: calc(96vh - 50px);
+  border: 1px solid #c4c7c5;
+  margin-top: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#overalContainer {
+  margin-top: 5px;
+}
+
+.e-groupfooterrow .e-summarycell {
+  background: #FFEFE3 !important;
+}
+
+tfoot .e-summaryrow .e-summarycell {
+  background: #E3F1FF !important;
+}
+
+tfoot .e-indentcell {
+  background: #E3F1FF !important;
+}
+
+/* To apply a right-side footer color that fills the gap in the last cell, ensure the footer spans the full width of the grid, including any empty space after the last column. */
+.e-grid .e-gridfooter,
+.e-grid .e-gridfooter .e-leftfreeze,
+.e-grid .e-gridfooter .e-rightfreeze,
+.e-grid .e-gridfooter .e-fixedfreeze {
+  background: #E3F1FF !important;
+}
+
+
+/* Icons are used in the menu to hide the default arrow indicator.*/
+.custom-menu-column-name .e-menu-item[aria-label="Column Name"] .e-caret,
+.custom-menu-column-date .e-menu-item[aria-label="Column Date"] .e-caret,
+.custom-menu-column-number .e-menu-item[aria-label="Column Number"] .e-caret,
+.custom-menu-column-verified .e-menu-item[aria-label="Column Verified"] .e-caret,
+.chooser-settings .e-menu-item[aria-label="Column Chooser Menu"] .e-caret,
+.custom-menu-column-clipmode .e-menu-item[aria-label="Column Name"] .e-caret,
+.footer-sum .e-menu-item[aria-label="Footer Menu"] .e-caret,
+.footer-avg .e-menu-item[aria-label="Footer Menu"] .e-caret {
+  display: none !important;
+}
+
+/* The dialog box is opened to display the search container. */
+#dialogbox_dialog-content {
+  overflow: hidden;
+}
+
+.filter-container {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.filter-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.search-column-group,
+.search-operator-group {
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.check-text {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-group {
+  margin-top: 10px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.checkbox-group label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* The checkbox and its label text are not vertically aligned, so CSS ia applied to center-align properly. */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  /* Space between elements */
+}
+
+/* The 'Clear Filter' and 'Search' buttons are added using the Chip component, and the chip border is hidden using the following CSS. */
+.e-chip {
+  border: 0px !important;
+}
+
+/* The 'Clear Filter' and 'Search' buttons are implemented using the Chip component and are aligned to the right side using CSS. */
+#chip-choice {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  gap: 8px;
+}
+
+
+/* The checkbox background and border color are hidden using custom CSS styling. */
+.custom-checkbox .e-frame {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+/* Change Tick (Checkmark) Color */
+.custom-checkbox .e-check::after {
+  color: #646068 !important;
+}
+
+/* Change Hover Effect */
+.custom-checkbox:hover .e-frame {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.custom-checkbox .e-check::before {
+  color: #646068 !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.exclamation-container {
+  display: inline-flex;
+  font-size: 14px !important;
+  font-weight: 400;
+}
+
+.single-column-exclamation-container {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px !important;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+/* The text style within the information icon is customized using CSS for better visual alignment and readability. */
+.e-icons .e-circle-info .icon {
+  font-size: 14px !important;
+  font-weight: 400;
+}
+
+/* The information icon is not aligned properly with the checkbox and its label text, so it is adjusted by setting the margin-top property using custom CSS. */
+.custom-checkbox .e-check,
+.custom-checkbox .e-label {
+  margin-top: -8px;
+}
+
+#example_dialog .e-dlg-header-content {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
+
+/* Spacing is applied between the 'Save' and 'Apply' buttons in the dialog box footer using custom CSS settings. */
+#example_dialog .e-dialog .e-footer-content {
+  padding-top: 15px !important;
+}
+
+#example_dialog .e-footer-content {
+  border-top: 1px solid #ccc;
+  /* Line above footer */
+}
+
+#listSidebar {
+  width: 175px !important;
+  height: 100% !important;
+}
+
+#example_dialog_dialog-content.e-dlg-content {
+  padding: 0px !important;
+}
+
+#example_dialog_dialog-content>div {
+  height: 100% !important;
+}
+
+#sblist-wrapper,
+#sidelistwrapper,
+.listmaincontent,
+#listSidebar,
+.e-content-animation {
+  height: 100% !important;
+}
+
+#listContent {
+  height: 100% !important;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#sblist-wrapper .listcontent {
+  font-size: 14px;
+  padding: 15px;
+  margin-left: 170px;
+
+}
+
+.listmaincontent .e-sidebar-context {
+  overflow: hidden;
+}
+
+#sblist-wrapper.control-section {
+  padding: 0;
+  height: 100% !important;
+}
+
+#sblist-wrapper #left {
+  float: left;
+  width: 30px;
+  height: 47px;
+}
+
+#sblist-wrapper .sidebar-list {
+  z-index: 20 !important;
+}
+
+#sblist-wrapper .e-toolbar .e-icons {
+  font-size: 20px;
+}
+
+#sblist-wrapper .e-tbar-menu-icon:before {
+  content: '\e914';
+  font-family: 'sbicons';
+}
+
+#sidebarList {
+  display: inline-flex;
+  width: 100%;
+}
+
+#sidelistwrapper {
+  height: 100% !important;
+}
+
+/* CSS is used to customize the chip in the Payment column of the Grid to make it look better. */
+.chip-paid,
+.chip-not-paid {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 16px;
+  border: 2px solid #C4C7C5 !important;
+  /* Border for chip */
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.chip-paid::before,
+.chip-not-paid::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.chip-paid {
+  background-color: #e6f4ea;
+  /* Light green */
+  color: #15803d !important;
+}
+
+.chip-paid::before {
+  background-color: #15803d;
+  /* Green dot */
+}
+
+.chip-not-paid {
+  background-color: #fdecea;
+  /* Light red */
+  color: #b91c1c !important;
+}
+
+.chip-not-paid::before {
+  background-color: #b91c1c;
+  /* Red dot */
+}
+
+/* CSS is used to customize the rating in the Rating column of the Grid to make it look better. */
+.e-rating-container.e-custom-rating .e-rating-item-list:hover .e-rating-item-container .e-rating-icon,
+.e-rating-container.e-custom-rating .e-rating-item-container .e-rating-icon {
+  background: linear-gradient(to right, #F29527 var(--rating-value), #d8d7d4 var(--rating-value));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+.e-rating-container.e-custom-rating.e-rtl .e-rating-item-list:hover .e-rating-item-container .e-rating-icon,
+.e-rating-container.e-custom-rating.e-rtl .e-rating-item-container .e-rating-icon {
+  background: linear-gradient(to right, #F29527 var(--rating-value), #d8d7d4 var(--rating-value));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.e-rating-container.e-custom-rating .e-rating-item-list:hover .e-rating-item-container .e-rating-icon,
+.e-rating-container.e-custom-rating .e-rating-item-container .e-rating-icon {
+  /* To change rating symbol border color */
+  -webkit-text-stroke: 0px #F29527;
+}
+
+/* The selected value in the Payment dropdown is not center-aligned, so text alignment needs to be adjusted using CSS. */
+.e-remain {
+  padding-top: 5px !important;
+}
+
+/* spacing issue between the Dialog Settings and Column Chooser icons in the Grid's toolbar that needs to be adjusted */
+.material3 .chooser-settings.e-menu-wrapper ul .e-menu-item.e-menu-caret-icon,
+.material3 .chooser-settings.e-menu-container ul .e-menu-item.e-menu-caret-icon,
+.material3-dark .chooser-settings.e-menu-wrapper ul .e-menu-item.e-menu-caret-icon,
+.material3-dark .chooser-settings.e-menu-container ul .e-menu-item.e-menu-caret-icon {
+  padding-right: 0px !important;
+  padding: 0px 10px 0px 10px !important;
+}
+
+/* single column settings icon postion adjustment */
+.iconviewdiv {
+  margin-top: 6px;
+}
+
+.fluent-dark .country_image,
+.fluent .country_image {
+  margin-left: 10px;
+}
+
+
+.treeviewdiv {
+  margin-top: 2px;
+}
+
+.selectchip {
+  font-size: 12px !important;
+  font-weight: 500;
+}
+
+/* To remove the grey background color when hovering over the icon, and to prevent the hover effect from appearing on the icon after the menu is opened and a menu item is hovered, apply custom CSS to override the default hover and focus styles. */
+.custom-menu-column-date .e-menu-item:hover,
+.custom-menu-column-date .e-menu-item.e-hover,
+.custom-menu-column-date .e-menu-item.e-focused,
+.custom-menu-column-date .e-menu-item.e-selected,
+.custom-menu-column-number .e-menu-item:hover,
+.custom-menu-column-number .e-menu-item.e-hover,
+.custom-menu-column-number .e-menu-item.e-focused,
+.custom-menu-column-number .e-menu-item.e-selected,
+.custom-menu-column-verified .e-menu-item:hover,
+.custom-menu-column-verified .e-menu-item.e-hover,
+.custom-menu-column-verified .e-menu-item.e-focused,
+.custom-menu-column-verified .e-menu-item.e-selected .custom-menu-column-clipmode .e-menu-item:hover,
+.custom-menu-column-clipmode .e-menu-item.e-hover,
+.custom-menu-column-clipmode .e-menu-item.e-focused,
+.custom-menu-column-clipmode .e-menu-item.e-selected {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+
+.footer-sum .e-menu-item[aria-label="Sum"] .e-caret,
+.footer-sum .e-menu-item[aria-label="Average"] .e-caret,
+.footer-sum .e-menu-item[aria-label="Min"] .e-caret,
+.footer-sum .e-menu-item[aria-label="Max"] .e-caret,
+.footer-sum .e-menu-item[aria-label="Count"] .e-caret {
+  margin-top: 3px !important;
+}
+
+.fluent-dark .footer-sum .e-menu-item[aria-label="Sum"],
+.fluent .footer-sum .e-menu-item[aria-label="Sum"],
+.fluent-dark .footer-sum .e-menu-item[aria-label="Average"],
+.fluent .footer-sum .e-menu-item[aria-label="Average"],
+.fluent-dark .footer-sum .e-menu-item[aria-label="Min"],
+.fluent .footer-sum .e-menu-item[aria-label="Min"],
+.fluent-dark .footer-sum .e-menu-item[aria-label="Max"],
+.fluent .footer-sum .e-menu-item[aria-label="Max"],
+.fluent-dark .footer-sum .e-menu-item[aria-label="Count"],
+.fluent .footer-sum .e-menu-item[aria-label="Count"] {
+  margin-top: -8px !important;
+}
+
+.fluent-dark .footer-sum .e-menu-item[aria-label="Sum"] .e-caret,
+.fluent .footer-sum .e-menu-item[aria-label="Sum"] .e-caret,
+.fluent-dark .footer-sum .e-menu-item[aria-label="Average"] .e-caret,
+.fluent .footer-sum .e-menu-item[aria-label="Average"] .e-caret,
+.fluent-dark .footer-sum .e-menu-item[aria-label="Min"] .e-caret,
+.fluent .footer-sum .e-menu-item[aria-label="Average"] .e-caret,
+.fluent-dark .footer-sum .e-menu-item[aria-label="Max"] .e-caret,
+.fluent .footer-sum .e-menu-item[aria-label="Max"] .e-caret,
+.fluent-dark .footer-sum .e-menu-item[aria-label="Count"] .e-caret,
+.fluent .footer-sum .e-menu-item[aria-label="Count"] .e-caret {
+  margin-top: 2px !important;
+}
+
+/* When the RTL checkbox is enabled in the single-column settings, the position shifts slightly downward, so a top margin adjustment is required to correct the alignment. */
+.grid-line .e-checkbox-wrapper.e-rtl .e-frame,
+.custom-menu-column-verified .e-checkbox-wrapper.e-rtl .e-frame,
+.custom-menu-column-clipmode .e-checkbox-wrapper.e-rtl .e-frame,
+.custom-menu-column-number .e-checkbox-wrapper.e-rtl .e-frame,
+.custom-menu-column-date .e-checkbox-wrapper.e-rtl .e-frame,
+.footer-sum .e-checkbox-wrapper.e-rtl .e-frame {
+  margin-top: -10px;
+}
+
+.templateText {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.groupCaptionMinText {
+  background-color: #205107;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 31px;
+}
+
+.groupCaptionMaxText {
+  background-color: #B3261E;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 31px;
+}
+
+
+.settingsIconAlignment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settingsIconText {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 6px;
+}
+
+.iconAlignment {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.e-grid .e-summarycell[index="12"] {
+  padding: 0px 0px;
+}
+
+/* When focusing on the command column using the keyboard, the top margin is not properly aligned. */
+.e-unboundcelldiv .e-btn.e-icon-btn {
+  padding: 5px !important;
+}
+
+/* Hide the toggle button for a specific column even when the "showToggleButton" option is enabled in the grouping settings. */
+th[aria-colindex="12"] .e-grptogglebtn,
+th[aria-colindex="10"] .e-grptogglebtn,
+th[aria-colindex="11"] .e-grptogglebtn,
+th[aria-colindex="8"] .e-grptogglebtn,
+th[aria-colindex="15"] .e-grptogglebtn {
+  display: none !important;
+}
+
+/* When grouping the columns using the toggle button, the arrow icon for the grouped column is not being displayed. */
+.e-nextgroup {
+  display: inline-block !important;
+}
+
+/* Remove the hover effect from the menu item specifically used for the aggregate section. */
+.footer-sum .e-menu-item[aria-label="Sum"]:hover,
+.footer-sum .e-menu-item[aria-label="Sum"].e-hover,
+.footer-sum .e-menu-item[aria-label="Sum"].e-focused,
+.footer-sum .e-menu-item[aria-label="Sum"].e-selected,
+.footer-sum .e-menu-item[aria-label="Average"]:hover,
+.footer-sum .e-menu-item[aria-label="Average"].e-hover,
+.footer-sum .e-menu-item[aria-label="Average"].e-focused,
+.footer-sum .e-menu-item[aria-label="Average"].e-selected,
+.footer-sum .e-menu-item[aria-label="Min"]:hover,
+.footer-sum .e-menu-item[aria-label="Min"].e-hover,
+.footer-sum .e-menu-item[aria-label="Min"].e-focused,
+.footer-sum .e-menu-item[aria-label="Min"].e-selected .footer-sum .e-menu-item[aria-label="Max"]:hover,
+.footer-sum .e-menu-item[aria-label="Max"].e-hover,
+.footer-sum .e-menu-item[aria-label="Max"].e-focused,
+.footer-sum .e-menu-item[aria-label="Max"].e-selected,
+.footer-sum .e-menu-item[aria-label="Count"]:hover,
+.footer-sum .e-menu-item[aria-label="Count"].e-hover,
+.footer-sum .e-menu-item[aria-label="Count"].e-focused,
+.footer-sum .e-menu-item[aria-label="Count"].e-selected {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+
+/* image and text alignment for the empty records */
+.emptyRecordTemplate {
+  text-align: left;
+}
+
+.e-emptyRecord {
+  display: block;
+  margin-left: 120px;
+}
+
+/* The alignment of the intermediate checkbox in the Verified column when RTL mode is enabled. */
+.e-filterUi_input .e-checkbox-wrapper.e-rtl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.e-filterUi_input .e-checkbox-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.e-dlg-content {
+  height: 100% !important;
+}
+
+body.material3-dark,
+body.fluent-dark {
+  background-color: black;
+}
+
+body.material3,
+body.fluent {
+  background-color: white;
+}
+
+.material3-dark .labelDetails,
+.fluent-dark .labelDetails {
+  color: white;
+}
+
+.material3 .labelDetails,
+.fluent .labelDetails {
+  color: black;
+}
+
+.walkthrough-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  pointer-events: none;
+}
+
+.walkthrough-tooltip-top-right,
+.walkthrough-tooltip-top-right-smaller,
+.walkthrough-tooltip-top-left,
+.walkthrough-tooltip-top-left-center,
+.walkthrough-tooltip-top-left-center-smaller,
+.walkthrough-tooltip-top-left-smaller,
+.walkthrough-tooltip-right-center {
+  position: absolute;
+  background: #f9fafb;
+  width: 350px;
+  padding: 10px;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  max-width: 400px;
+}
+
+.walkthrough-tooltip-top-right::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 12px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #f9fafb transparent;
+}
+
+@media (min-width: 768px) and (max-width: 895px) {
+  .walkthrough-tooltip-top-right::before {
+    right: 66px;
+  }
+}
+
+/* Between 896px and 1200px → right: 12px */
+@media (min-width: 896px) and (max-width: 1200px) {
+  .walkthrough-tooltip-top-right::before {
+    right: 13px;
+  }
+}
+
+.walkthrough-tooltip-top-left-smaller::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 76%;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #f9fafb transparent;
+}
+
+.walkthrough-tooltip-top-right-smaller::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 19%;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #f9fafb transparent;
+}
+
+.walkthrough-tooltip-top-left-center-smaller::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 64%;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #f9fafb transparent;
+}
+
+
+.walkthrough-tooltip-top-left-center::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 60%;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #f9fafb transparent;
+}
+
+.walkthrough-tooltip-top-left::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 94%;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #f9fafb transparent;
+}
+
+.walkthrough-tooltip-right-center::before {
+  content: "";
+  position: absolute;
+  top: 84%;
+  left: 100%;
+  transform: translateY(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #f9fafb;
+}
+
+.walkthrough-highlight {
+  background-color: #f9fafb !important;
+  position: relative;
+  z-index: 1001 !important;
+  box-shadow: 0 0 0 1px black;
+  pointer-events: auto !important;
+}
+
+.tooltip-close {
+  position: relative;
+  float: right;
+  z-index: 9999;
+  top: -7px;
+  /* distance from the top */
+  right: -2px;
+  /* distance from the right */
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+  /* color of the close icon */
+  background: none;
+  border: none;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.walkthrough-controls {
+  display: flex;
+  margin-top: 10px;
+  text-align: right;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.walkthrough-controls button {
+  padding: 8px 8px;
+  min-width: 80px;
+}
+
+.e-unboundcell {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.walkthrough-tooltip {
+  background: #f9f9f9;
+  min-width: 300px;
+}
+
+.walkthrough-arrow {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.walkthrough-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.walkthrough-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.walkthrough-dot.active {
+  background-color: blue;
+}
+
+/* Left-align and right-align Back and Next buttons */
+.walkthrough-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Set the text color for the aggregate sum in dark theme */
+.material3-dark #aggregate-menu .setting-row,
+.fluent-dark #aggregate-menu .setting-row {
+  color: black;
+}
+
+/* Set the menu arrow color for the aggregate sum in dark theme */
+.material3-dark #aggregate-menu .e-caret,
+.fluent-dark #aggregate-menu .e-caret {
+  color: black;
+}
+
+/* Adjust the alignment and positioning of the gridline menu icon in the toolbar to ensure consistent spacing and visual balance. */
+#gridLines {
+  margin-top: 6px !important;
+}
+
+.fluent #gridLines,
+.fluent-dark #gridLines {
+  margin-top: 2px !important;
+}
+
+.e-toolbar .e-toolbar-item:not(.e-separator):not(.e-spacer) {
+  padding: 4px 4px 4px 4px;
+}
+
+.centered-button {
+  display: block;
+  margin: 0 auto;
+}
+
+/* After an image is browsed, the image size text and the delete icon are added. */
+.e-upload-files {
+  display: none;
+}
+
+
+.image-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.file-name {
+  font-weight: 500;
+  margin-right: 10px;
+  color: #333;
+}
+
+.file-size {
+  color: #666;
+  font-size: 12px;
+  margin-right: auto;
+}
+
+.delete-icon {
+  color: #d32f2f;
+  font-size: 16px;
+  padding: 4px;
+}
+
+#delteIcon {
+  cursor: pointer;
+}
+
+
+.fluent #dialogbox.e-dialog .e-dlg-content,
+.fluent-dark #dialogbox.e-dialog .e-dlg-content {
+  padding: 7px 7px 0 7px !important;
+}
+
+
+.fluent #dialogbox.e-dialog .e-footer-content,
+.fluent-dark #dialogbox.e-dialog .e-footer-content {
+  padding: 10px !important;
+}
+
+/* reduce the tab focus border thickness in the search dialog box from 4px to 2px. */
+.fluent #dialogbox.e-chip-list.e-chip.e-focused,
+.e-chip-list .e-chip.e-focused,
+.fluent-dark #dialogbox.e-chip-list.e-chip.e-focused,
+.e-chip-list .e-chip.e-focused {
+  box-shadow: 0px 0px 0px 2px #A8A7A7 !important;
+}
+
+/* The left icons in the toolbar were rendering lower than expected, so a top offset was added to slightly shift the toolbar upwards. */
+.fluent #overviewgrid_toolbarItems.e-toolbar .e-toolbar-items.e-tbar-pos .e-toolbar-left,
+.fluent-dark #overviewgrid_toolbarItems.e-toolbar .e-toolbar-items.e-tbar-pos .e-toolbar-left {
+  top: -7px !important;
+}
+
+/* The pager padding is rendering outside the grid container, so the top and bottom padding were reduced to ensure it fits properly within the container. */
+.fluent .e-pager,
+.fluent-dark .e-pager {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+/* The position of the grouping arrow symbol is misaligned in the Show Drop Area section. */
+.fluent .e-grid .e-group-animate.e-groupdroparea .e-nextgroup,
+.fluent-dark .e-grid .e-group-animate.e-groupdroparea .e-nextgroup {
+  margin-top: 14px !important;
+}
+
+/* The grouping drag icon is not displayed correctly within the Show Drop Area. */
+.fluent .e-grid .e-group-animate .e-icon-drag.e-icons,
+.fluent-dark .e-grid .e-group-animate .e-icon-drag.e-icons {
+  margin-top: 6px !important;
+}
+
+/* The position of the grouping arrow symbol is misaligned in the Show Drop Area section while enabling RTL. */
+.fluent .e-grid.e-rtl .e-group-animate.e-groupdroparea .e-nextgroup,
+.fluent-dark .e-grid.e-rtl .e-group-animate.e-groupdroparea .e-nextgroup {
+  margin-top: 22px !important;
+}
+
+.checkbox-group > .treeviewdiv .e-checkbox-wrapper {
+  padding: 8px 0px 8px 0px !important;
+}
+
+.dropdown-with-label {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 24px;
+   width: 100%;
+}
+
+.e-rtl .dropdown-with-label {
+   padding-right: 0px;
+}
+
+.sf-icon-male, .sf-icon-female {
+  color: white;
+}
+
+#dialogbox.e-dialog .e-footer-content, #dialogbox.e-dialog .e-dlg-content {
+  padding: 10px !important;
+}
+
+.e-checkbox-wrapper label[for="Verified"] {
+  margin: 0px 10px 0px 0px !important;
+}
+
+.e-rtl .e-checkbox-wrapper label[for="Verified"] {
+  margin: 0px 0px 0px 10px !important;
+}
+
+/* The checkbox values within the dropdown for the payment status are not properly aligned.*/
+.e-ddt.e-popup .e-selectall-parent,
+.e-treeview .e-ul {
+  padding: 0px 9px 0px 0px !important;
+}
+
+/* When the browser is in responsive mode, all banner text is grouped into a popup menu for better mobile usability */
+.popup-menu {
+  top: 60px;
+  right: 5px;
+  background-color: #111;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+/* When the browser switches to responsive mode, all banner text is moved into a popup menu, with hyperlink tags styled for optimal appearance and interaction on smaller screens */
+.popup-menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.githubdemo {
+  margin-top: 2px !important;
+}
+
+.mobile-only .githubdemo a {
+  margin-left: -5px !important;
+}
+
+/* Customization applied to the app bar for layout and styling */
+.appbar {
+  height: 60px;
+}
+
+/* Styling and customization for the div element containing the Syncfusion logo */
+.syncfusion-logo {
+  float: left;
+  width: 170px !important;
+  padding: 11px 0;
+}
+
+/* Image is rendered as a hyperlink with custom styling applied */
+.sync-logo-img {
+  background-repeat: no-repeat;
+  background-image: url(https://cdn.syncfusion.com/content/images/Logo/Logo_150dpi.png);
+  background-size: 160px 36px;
+  position: absolute;
+  width: 160px !important;
+  height: 36px;
+}
+
+/* Customization of the separator height for visual spacing */
+.e-appbar-separator {
+  height: 33px !important;
+}
+
+/* Customization of the title name for the React Feature Rich Data Grid */
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 10px 15px !important;
+}
+
+/* Font family and color customization for the title, menu text, and "Try Free" label in the React Feature-Rich Data Grid component */
+.menu-title,
+.title,
+.tryfree,
+#github,
+#download-now-button {
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  color: #fff;
+  font-variant-ligatures: common-ligatures;
+}
+
+/* Font size and weight customization for the "Try Free" label and the "Book Free Demo" button text */
+.tryfree,
+.bookdemo {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Opacity and letter-spacing customization for the "Try Free" label */
+.tryfree {
+  letter-spacing: .5px;
+  opacity: 1 !important;
+}
+
+/* Styling and customization applied to the "Learning" text used as a menu title */
+.menu-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Customization of the "GitHub" text label */
+#github {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: auto;
+  padding: 10px 15px;
+}
+
+/* Responsive customization of the "GitHub" text label for different browser sizes */
+.mobile-only #github {
+  padding: 0px;
+}
+
+.mobile-only .bookdemo {
+  border-radius: 5px;
+  height: auto;
+}
+
+.bookdemo:hover {
+  color: black !important;
+}
+
+#book-free-demo:hover {
+  background-color: #fff;
+  color: black !important;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#book-free-demo,
+#download-now-button,
+.menu-title {
+  opacity: 1 !important;
+  transition-delay: 0s;
+  transition-duration: .3s;
+  transition-property: all;
+  transition: font-weight .1s ease-in-out;
+}
+
+#book-free-demo,
+#download-now-button {
+  padding: 8px 18px !important;
+  border-radius: 4px;
+}
+
+#book-free-demo {
+  text-align: center;
+  color: white !important;
+  border: 1px solid #fff !important;
+  background-color: transparent;
+  text-decoration: none;
+  letter-spacing: .5px;
+  vertical-align: top;
+}
+
+#download-now-button {
+  font-weight: 600;
+  background: #0073dc !important;
+  border-color: #4a90e2;
+  outline: medium none !important;
+}
+
+.mobile-only #download-now-button {
+  text-align: center;
+}
+
+#tryfreebutton {
+  padding: 10 15px;
+}
+
+#demo {
+  margin: 0px 10px 0px 10px;
+  padding: 2px 20px 0px 20px;
+}
+
+.mobile-only #demo {
+  padding: 10px 0px 10px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+/* Grid layout for menu items */
+@media (min-width: 1017px) {
+  .e-template-menu.e-menu-wrapper ul.e-ul {
+    width: 850px;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, 185px);
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+#menu .e-menu-wrapper,
+#menu .e-menu-container {
+  background: #111;
+}
+
+/* Each menu item styled as a card */
+@media (min-width: 1024px) {
+  .e-template-menu.e-menu-wrapper ul.e-ul .e-menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+    min-height: 95px;
+  }
+  
+}
+
+@media (min-width: 1023px) {
+  .e-template-menu.e-menu-wrapper.e-popup.e-menu-popup,
+  .e-template-menu.e-menu-container.e-popup.e-menu-popup {
+    margin-left: -5%;
+    top: 66px !important;
+  }
+}
+
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  .e-template-menu.e-menu-wrapper.e-popup.e-menu-popup {
+    margin-left: 5px !important;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 555px) {
+  .popup-menu.mobile-only {
+    margin-right: -3px !important;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1024px) {
+  .popup-menu.mobile-only {
+    width: 98.92% !important;
+    margin-left: 0px !important;
+  }
+}
+
+.e-template-menu.e-menu-wrapper ul .e-menu-item .e-caret {
+  top: 0px !important;
+  right: 0px !important;
+}
+
+.mobile-only .e-menu-wrapper ul .e-menu-item .e-caret {
+  top: 5px !important;
+}
+
+#menu .e-menu-wrapper .e-menu .e-menu-item .e-caret,
+#menu .e-menu-container .e-menu .e-menu-item .e-caret,
+#menumobile .e-menu-wrapper .e-menu .e-menu-item .e-caret,
+#menumobile .e-menu-container .e-menu .e-menu-item .e-caret {
+  color: white !important;
+}
+
+/* Badge */
+.e-template-menu.e-menu-wrapper ul .e-menu-item .e-badge {
+  background-color: #ffeb3b;
+  color: #000;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.menu-item {
+  width: 100%;
+  text-decoration: none;
+}
+
+/* Title and description */
+.menusubitems {
+  font-weight: bold;
+  color: #000;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.description {
+  display: inline-block;
+  font-weight: 400;
+  margin-left: 32px;
+  line-height: 16px;
+  white-space: normal;
+  letter-spacing: 0.24px;
+  font-size: 12px;
+  color: #475569;
+}
+
+.icon-text-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menusubitems .icon-spacing {
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.mobile-only .e-menu-wrapper ul .e-menu-item {
+  padding-left: 0px !important;
+}
+
+hr.separator-line-mobile {
+  opacity: 0.25;
+  margin-top:0px !important;
+  margin-bottom:0px !important;
+}
+
+/* Removed the hover color effect from the "Learning" menu text items for a cleaner appearance */
+.e-menu-wrapper .e-menu .e-menu-item.e-focused,
+.e-menu-container .e-menu .e-menu-item.e-focused,
+.e-menu-wrapper .e-menu .e-menu-item.e-selected,
+.e-menu-wrapper .e-menu .e-menu-item.e-active-item,
+.e-menu-container .e-menu .e-menu-item.e-selected,
+.e-menu-container .e-menu .e-menu-item.e-active-item {
+  background-color: transparent !important;
+}
+
+/* Hover effect for the entire menu item */
+.e-template-menu.e-menu-wrapper ul.e-ul .e-menu-item:hover {
+  background-color: #e6f4ff;
+  box-shadow: 0 4px 12px rgba(0, 120, 212, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Zoom-in effect for the icon */
+.e-template-menu.e-menu-wrapper ul.e-ul .e-menu-item:hover .icon-spacing span {
+  transform: scale(1.3);
+  transition: transform 0.3s ease;
+}
+
+/* Ensure icon has smooth transition */
+.icon-spacing span {
+  /* margin-top: -10px; */
+  color: #0057FF;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.menu-item-title {
+  color: #334155 !important;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.e-menu-wrapper .e-ul,
+.e-menu-container .e-ul {
+  min-width: 85px !important;
+}
+
+.desktop-only {
+  display: flex;
+}
+
+.mobile-only {
+  display: none;
+  margin-left: auto;
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+}
+
+@media (min-width: 750px) {
+ .mobile-only.popup-menu {
+    width: 98.4%;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .mobile-only.popup-menu {
+    position: absolute;
+    width: 98.92%;
+  }
+      
+  .menusubitems {
+    margin-bottom: 0px;
+  }
+
+  .e-template-menu.e-menu-wrapper ul.e-ul .e-menu-item {
+    min-height: 60px;
+    line-height: 0px;
+    padding-top: 10px !important;
+  }
+
+ 
+
+  .hamburger {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border: 1px solid #333;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+    /* Optional: for slightly rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .hamburger:hover {
+    background-color: #555;
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+  }
+
+  .e-menu-wrapper.e-popup.e-menu-popup,
+  .e-menu-container.e-popup.e-menu-popup {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .e-menu-wrapper.e-popup.e-menu-popup {
+    left: 5px !important;
+  }
+}
+
+.react-ui-kit {
+  width: 30px;
+  height: 30px;
+  background: url(https://cdn.syncfusion.com/content/images/common/menu/images/product-icons-v7.svg) 0 0 !important;
+  background-repeat: no-repeat !important;
+  background-position-x: -112px !important;
+  background-position-y: -104px !important;
+}
+
+.mobile-only .e-menu-wrapper ul .e-menu-item.e-menu-caret-icon,
+.mobile-only .e-menu-container ul .e-menu-item.e-menu-caret-icon,
+.mobile-only .e-menu-wrapper,
+.mobile-only .e-menu-container,
+.e-appbar.e-dark {
+  background: #111;
+}
+
+#download-now-button:hover {
+  background-color: #66b2ff !important;
+  border-radius: 4px;
+  border-color: #66b2ff;
+  transition: background-color 0.3s ease;
+}
+
+.platform-image {
+  font-family: 'SyncfusionMenuIcons' !important;
+  font-size: 24px;
+}
+
+.App {
+  min-width: 550px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#overviewgrid_edit .e-tbar-btn-text , #overviewgrid_delete .e-tbar-btn-text,
+#overviewgrid_update .e-tbar-btn-text, #overviewgrid_cancel .e-tbar-btn-text {
+  display: none !important;
+}
